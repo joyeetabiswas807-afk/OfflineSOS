@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- =============================== -->
+    <!-- LOCATION / GPS                  -->
+    <!-- =============================== -->
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <!-- =============================== -->
+    <!-- SMS                             -->
+    <!-- =============================== -->
+
+    <uses-permission
+        android:name="android.permission.SEND_SMS" />
+
+
+    <!-- =============================== -->
+    <!-- BLUETOOTH - ANDROID 11 AND BELOW -->
+    <!-- =============================== -->
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+
+
+    <!-- =============================== -->
+    <!-- BLUETOOTH - ANDROID 12+         -->
+    <!-- =============================== -->
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+
+    <!-- =============================== -->
+    <!-- WIFI / NEARBY CONNECTIONS       -->
+    <!-- =============================== -->
+
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.NEARBY_WIFI_DEVICES"
+        android:minSdkVersion="32" />
+
+    <!-- Android 17 / API 37+ -->
+    <uses-permission
+        android:name="android.permission.ACCESS_LOCAL_NETWORK"
+        android:minSdkVersion="37" />
+
+
+    <!-- =============================== -->
+    <!-- INTERNET                         -->
+    <!-- =============================== -->
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+
+
+    <!-- =============================== -->
+    <!-- VIBRATION                        -->
+    <!-- =============================== -->
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+
+    <!-- =============================== -->
+    <!-- APPLICATION                      -->
+    <!-- =============================== -->
+
+    <application
+        android:allowBackup="true"
+        android:label="OfflineSOS"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OfflineSOS">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>
